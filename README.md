@@ -7,7 +7,7 @@ The system uses Google’s Gemini API to intelligently reconstruct shorthand or 
 ---
 
 
-## 👥 Team
+## Team
 
   - B.Hari Sampath (SE24UCSE250)
   - Siddharth Cheedi (SE24UCSE199)
@@ -18,7 +18,7 @@ The system uses Google’s Gemini API to intelligently reconstruct shorthand or 
 
 ---
 
-## ✨ Features
+## Features
 
 -   **AI Reconstruction:** Converts incomplete or slang-filled phrases into natural, meaningful text.
 -   **Contextual Sources:** Displays relevant articles or web pages that give context to the reconstructed text.
@@ -40,7 +40,7 @@ The system uses Google’s Gemini API to intelligently reconstruct shorthand or 
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 Follow these steps to set up the project environment on a new machine.
 
@@ -98,14 +98,14 @@ GOOGLE_CX_ID=your_custom_search_engine_id
 \<details\>
 \<summary\>\<strong\>Click here for instructions on how to get these keys.\</strong\>\</summary\>
 
-#### 1️⃣ Create / Select a Google Cloud Project
+#### 1️ Create / Select a Google Cloud Project
 
 1.  Go to the [Google Cloud Console](https://console.cloud.google.com/) and sign in.
 2.  Click the project dropdown in the top-left corner → **New Project**.
 3.  Give it a name (e.g., `project-chronos`) and click **Create**.
 4.  After creation, make sure the new project is selected.
 
-#### 2️⃣ Enable Required APIs
+#### 2️ Enable Required APIs
 
 1.  Go to the [Google Cloud API Library](https://console.cloud.google.com/apis/library).
 2.  **Enable the Generative Language API (Gemini):**
@@ -115,7 +115,7 @@ GOOGLE_CX_ID=your_custom_search_engine_id
       - In the same API Library, search for `Custom Search API` or `customsearch`.
       - Click **Custom Search JSON API** → click **Enable**.
 
-#### 3️⃣ Create API Keys
+#### 3️ Create API Keys
 
 You will create two separate API keys.
 
@@ -192,9 +192,10 @@ Vite will show a local URL, such as `http://localhost:5173/`. Open this URL in y
 2.  Click **Reconstruct Text**.
 3.  The AI will return a complete version with contextual web sources.
 4.  Use the buttons to:
-      - 🔊 Play the reconstructed text (Text-to-Speech)
-      - 📄 Download a report
-      - 📜 View recent reconstructions
+      - Play the reconstructed text (Text-to-Speech)
+      - Download a report
+      - View recent reconstructions
 
 -----
+
 
