@@ -129,7 +129,7 @@ You will create two separate API keys.
       - Select **Generative Language API** and click **Save**.
       - Repeat this for your Search key, selecting **Custom Search API**.
 
-#### 4️⃣ Create a Custom Search Engine (CX ID)
+#### 4️ Create a Custom Search Engine (CX ID)
 
 1.  Go to [Programmable Search Engine](https://programmablesearchengine.google.com/).
 2.  Click **Add** (or **New search engine**).
@@ -138,7 +138,7 @@ You will create two separate API keys.
 5.  Open the new search engine’s **Control Panel → Basics** tab.
 6.  Copy the **Search engine ID** — this is your `GOOGLE_CX_ID`.
 
-⚠️ **Important:** If your CSE only searches specific websites, the API will return empty results. Ensure your engine is set to **Search the entire web** for full functionality.
+**Important:** If your CSE only searches specific websites, the API will return empty results. Ensure your engine is set to **Search the entire web** for full functionality.
 
 \</details\>
 
@@ -197,5 +197,6 @@ Vite will show a local URL, such as `http://localhost:5173/`. Open this URL in y
       - View recent reconstructions
 
 -----
+
 
 
