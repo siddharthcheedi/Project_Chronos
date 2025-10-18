@@ -1,4 +1,4 @@
-# 🧩 Project Chronos: The AI Archeologist
+# Project Chronos: The AI Archeologist
 
 Project Chronos is an AI-powered text reconstruction web application that acts as a digital archeologist, capable of decoding and reconstructing fragmented or slang-filled text commonly found in early internet communication.
 
@@ -11,8 +11,8 @@ The system uses Google’s Gemini API to intelligently reconstruct shorthand or 
 
   - B.Hari Sampath (SE24UCSE250)
   - Siddharth Cheedi (SE24UCSE199)
-  - Thanishka Reddygari (SE24UCSE25)
-  - Geshna Akula (SE24UCSE25)
+  - Thanishka Reddygari (SE24UCSE259)
+  - Geshna Akula (SE24UCSE256)
 
 <!-- end list -->
 
@@ -20,15 +20,15 @@ The system uses Google’s Gemini API to intelligently reconstruct shorthand or 
 
 ## ✨ Features
 
--   🧠 **AI Reconstruction:** Converts incomplete or slang-filled phrases into natural, meaningful text.
--   🌐 **Contextual Sources:** Displays relevant articles or web pages that give context to the reconstructed text.
--   🗣 **Voice Playback:** Reads out the reconstructed text using text-to-speech.
--   🧾 **Report Download:** Allows users to save reconstruction reports.
--   🖥 **Modern Web UI:** Built with React, TypeScript, and Tailwind CSS for a sleek and responsive experience.
+-   **AI Reconstruction:** Converts incomplete or slang-filled phrases into natural, meaningful text.
+-   **Contextual Sources:** Displays relevant articles or web pages that give context to the reconstructed text.
+-   **Voice Playback:** Reads out the reconstructed text using text-to-speech.
+-   **Report Download:** Allows users to save reconstruction reports.
+-   **Modern Web UI:** Built with React, TypeScript, and Tailwind CSS for a sleek and responsive experience.
 
 ---
 
-## 🧰 Tech Stack
+## Tech Stack
 
 | Layer | Technology |
 | :--- | :--- |
@@ -159,7 +159,7 @@ npm install
 
 -----
 
-## 🏃 Usage Guide
+## Usage Guide
 
 You will need **two separate terminals** open to run the project.
 
@@ -197,3 +197,4 @@ Vite will show a local URL, such as `http://localhost:5173/`. Open this URL in y
       - 📜 View recent reconstructions
 
 -----
+
