@@ -1,0 +1,232 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Parchment & Archive Colors */
+    --background: 40 25% 96%;
+    --foreground: 220 15% 15%;
+
+    --card: 38 35% 92%;
+    --card-foreground: 220 15% 15%;
+
+    --popover: 40 30% 98%;
+    --popover-foreground: 220 15% 15%;
+
+    /* Glowing Cyan-Blue Primary */
+    --primary: 190 100% 50%;
+    --primary-foreground: 220 15% 15%;
+    --primary-glow: 190 100% 60%;
+
+    /* Rich Gold Accent */
+    --secondary: 45 100% 50%;
+    --secondary-foreground: 220 15% 15%;
+    --secondary-glow: 45 100% 65%;
+
+    /* Muted Archive Tones */
+    --muted: 40 20% 88%;
+    --muted-foreground: 220 10% 45%;
+
+    /* Accent Highlights */
+    --accent: 190 95% 45%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 40 25% 82%;
+    --input: 40 25% 85%;
+    --ring: 190 100% 50%;
+
+    --radius: 0.75rem;
+
+    /* Custom Design Tokens */
+    --glow-blue: 190 100% 50%;
+    --glow-gold: 45 100% 50%;
+    --archive-dark: 220 20% 20%;
+    --archive-light: 40 30% 94%;
+    
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(190 100% 50% / 0.15), hsl(45 100% 50% / 0.15));
+    --gradient-glow: linear-gradient(135deg, hsl(190 100% 60%), hsl(45 100% 60%));
+    --gradient-card: linear-gradient(180deg, hsl(40 30% 96%), hsl(40 25% 92%));
+    
+    /* Shadows & Glows */
+    --shadow-glow-blue: 0 0 30px hsl(190 100% 50% / 0.3), 0 0 60px hsl(190 100% 50% / 0.15);
+    --shadow-glow-gold: 0 0 30px hsl(45 100% 50% / 0.3), 0 0 60px hsl(45 100% 50% / 0.15);
+    --shadow-card: 0 10px 40px hsl(220 20% 20% / 0.08);
+    --shadow-elevated: 0 20px 60px hsl(220 20% 20% / 0.12);
+    
+    /* Animations */
+    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-glow: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+
+    /* Sidebar */
+    --sidebar-background: 40 25% 96%;
+    --sidebar-foreground: 220 15% 15%;
+    --sidebar-primary: 190 100% 50%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 40 20% 88%;
+    --sidebar-accent-foreground: 220 15% 15%;
+    --sidebar-border: 40 25% 82%;
+    --sidebar-ring: 190 100% 50%;
+  }
+
+  .dark {
+    --background: 220 20% 12%;
+    --foreground: 40 30% 92%;
+
+    --card: 220 18% 16%;
+    --card-foreground: 40 30% 92%;
+
+    --popover: 220 20% 14%;
+    --popover-foreground: 40 30% 92%;
+
+    --primary: 190 100% 50%;
+    --primary-foreground: 220 20% 12%;
+    --primary-glow: 190 100% 60%;
+
+    --secondary: 45 100% 50%;
+    --secondary-foreground: 220 20% 12%;
+    --secondary-glow: 45 100% 65%;
+
+    --muted: 220 15% 22%;
+    --muted-foreground: 40 20% 65%;
+
+    --accent: 190 95% 45%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62% 50%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 220 15% 24%;
+    --input: 220 15% 22%;
+    --ring: 190 100% 50%;
+
+    --archive-dark: 220 25% 8%;
+    --archive-light: 220 15% 25%;
+
+    --gradient-hero: linear-gradient(135deg, hsl(190 100% 50% / 0.2), hsl(45 100% 50% / 0.2));
+    --gradient-card: linear-gradient(180deg, hsl(220 18% 18%), hsl(220 18% 14%));
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
+  }
+}
+
+@layer components {
+  /* Glowing text effect */
+  .text-glow-blue {
+    text-shadow: 0 0 20px hsl(var(--glow-blue) / 0.5), 0 0 40px hsl(var(--glow-blue) / 0.3);
+  }
+
+  .text-glow-gold {
+    text-shadow: 0 0 20px hsl(var(--glow-gold) / 0.5), 0 0 40px hsl(var(--glow-gold) / 0.3);
+  }
+
+  /* Glowing borders */
+  .border-glow-blue {
+    border-color: hsl(var(--primary));
+    box-shadow: 0 0 20px hsl(var(--glow-blue) / 0.3);
+  }
+
+  .border-glow-gold {
+    border-color: hsl(var(--secondary));
+    box-shadow: 0 0 20px hsl(var(--glow-gold) / 0.3);
+  }
+
+  /* Interactive hover scale */
+  .hover-lift {
+    @apply transition-all duration-300 hover:scale-105 hover:-translate-y-1;
+  }
+
+  /* Card with glow - enhanced backdrop blur */
+  .card-glow {
+    background: var(--gradient-card);
+    box-shadow: var(--shadow-card);
+    @apply rounded-xl border border-border/50 transition-all duration-500 backdrop-blur-md bg-card/80;
+  }
+
+  .card-glow:hover {
+    box-shadow: var(--shadow-elevated), 0 0 30px hsl(var(--primary) / 0.15);
+    border-color: hsl(var(--primary) / 0.3);
+    @apply backdrop-blur-lg;
+  }
+  
+  /* Card hover variant for interactive sections */
+  .card-hover {
+    @apply backdrop-blur-sm bg-card/70;
+  }
+
+  /* Timeline animation background */
+  .timeline-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 0;
+    overflow: hidden;
+  }
+
+  /* Smooth scroll behavior */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: hsl(var(--muted));
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: hsl(var(--primary) / 0.5);
+    border-radius: 5px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: hsl(var(--primary) / 0.7);
+  }
+}
+
+@layer utilities {
+  /* Text gradient utilities */
+  .text-gradient-blue {
+    background: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .text-gradient-gold {
+    background: linear-gradient(135deg, hsl(var(--secondary)), hsl(var(--secondary-glow)));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .text-gradient-dual {
+    background: var(--gradient-glow);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
