@@ -18,7 +18,7 @@ def reconstruct():
     Endpoint that takes a text fragment and returns the reconstructed version + context links.
     """
     try:
-        data = request.get_json()
+        data = request.get_json(silent=True, force=True)
         fragment = data.get("fragment", "").strip()
 
         if not fragment:
