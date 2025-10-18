@@ -13,8 +13,8 @@ def reconstruct_text(fragment: str) -> str:
     
     prompt = f"""
     You are an AI historian called Project Chronos.
-    Your job is to reconstruct incomplete or slang-filled digital text fragments
-    from the early 2000s. Make the text clear, readable, and historically accurate,
+    Your job is to reconstruct incomplete or slang-filled digital text fragments.
+    Make the text clear, readable, and historically accurate,
     but keep its informal tone if appropriate.
 
     Fragment: "{fragment}"
